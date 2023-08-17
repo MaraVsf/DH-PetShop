@@ -4,9 +4,9 @@
     margin: 0;
 }
 
-/** Header */
+/*? Header */
 
-/* Barra superior */
+/** Barra superior */
 .containerSup, .containerFin {
     background-color: #222222;
     font-size: 10px;
@@ -23,7 +23,7 @@
     margin: 2px;
 }
 
-/* Barra de navegación */
+/** Barra de navegación */
 .containerNav {
     background-color: #F0A83E;
     padding: 20px;
@@ -46,24 +46,51 @@ a {
     color: #f4f4f4;
 }
 
-/** Main */
+/*? Main */
 
-/* Cabezera */
+/** Cabezera */
 .containerCab {
     background-image: url("../img/background.png");
     background-size: cover;
-    height: 400px;
+    height: 410px;
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    align-items: center;
+}
+
+.containerCab div {
+    text-align: center;
+    margin: 10px;
+    color: #3C2313;
+    display: flex;
     flex-direction: column;
-    align-items: end;
+    justify-content: space-evenly;
+    height: 180px;
 }
 
 .containerCab h2 {
     background-color: #f4f4f4;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 6px;
+    font-weight: normal;
 }
 
-/* Productos destacados */
+.containerCab p {
+    font-size: 16px;
+}
+
+.containerCab a {
+    color: #f4f4f4;
+    background-color: #F0A83E;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 20px;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+/** Productos destacados */
 .containerProd article h2 {
     color: #3C2313;
     font-size: 40px;
@@ -73,19 +100,19 @@ a {
     color: #666666;
 }
 
-/* Contacto */
+/** Contacto */
 
-/* Suscripción */
+/** Suscripción */
 
-/** Footer */
+/*? Footer */
 
-/* Información */
+/** Información */
 .containerInf {
     background-color: #3C2313;
     padding: 20px;
 }
 
-/* Barra final */
+/** Barra final */
 
 .containerFin {
     justify-content: center;
