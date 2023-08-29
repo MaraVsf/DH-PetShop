@@ -168,6 +168,52 @@ a {
 
 /** Contacto */
 
+#contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto legend {
+    color: #3C2313;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+#contacto input {
+    background-color: #3C2313;
+    border: none;
+    border-radius: 15px;
+    width: 300px;
+    height: 40px;
+    margin: 2px;
+}
+
+#contacto input::placeholder {
+    font-size: 9px;
+}
+
+#contacto div {
+    margin: 30px 0px 30px 0px;
+}
+
+#btnReset, #btnSubmit {
+    border: none;
+    width: 150px;
+    height: 40px;
+    color: #f4f4f4;
+    border-radius: 20px;
+}
+
+#btnReset {
+    background-color: #8A8787;
+}
+
+#btnSubmit {
+    background-color: #F0A83E;
+}
+
 /** Suscripción */
 
 .containerSusc {
