@@ -24,12 +24,12 @@
             <!--* Logo -->
             <div class="containerLogo">
                 <img src="img/logoCat.png" alt="Logo Cat">
-                <p><span>Front</span>Cat&Dog</p>
+                <p><span>Front </span>Cat&Dog</p>
                 <img src="img/logoDog.png" alt="Logo Dog">
             </div>
 
             <!--* Menu -->
-            <nav>
+            <nav class="menu">
                 <ul>
                     <li><a href="#"><img src="img/iconPata2.png" alt="Icono Patita">Categorias</a></li>
                     <li><a href="#"><img src="img/iconPata2.png" alt="Icono Patita">Pets</a></li>
@@ -55,10 +55,10 @@
         <!--* Productos destacados -->
         <section class="containerProd">
 
-            <article>
+            <article class="destacados">
                 <img src="img/iconPata1.png" alt="Icono de huellita">
                 <h2>Productos Destacados</h2>
-                <ul>
+                <ul class="destacadosMenu">
                     <li><a href="#">Comederos</a></li>
                     <li> - </li>
                     <li><a href="#">Accesorios</a></li>
@@ -68,23 +68,23 @@
             </article>
             
             <!--* Tarjetas -->
-            <article>
+            <article class="prodCard">
                 <div>
                     <img src="img/prod1.png" alt="Producto 1">
-                    <p>Juguete Churrasquito</p>
-                    <p>$150</p>
+                    <p class="prodNom">Juguete Churrasquito</p>
+                    <p class="prodPrecio">$150</p>
                 </div>
 
                 <div>
                     <img src="img/prod2.png" alt="Producto 2">
-                    <p>Comedero para perro</p>
-                    <p>$250</p>
+                    <p class="prodNom">Comedero para perro</p>
+                    <p class="prodPrecio">$250</p>
                 </div>
 
                 <div>
                     <img src="img/prod3.png" alt="Producto 3">
-                    <p>Juguete Huesito</p>
-                    <p>$650</p>
+                    <p class="prodNom">Juguete Huesito</p>
+                    <p class="prodPrecio">$650</p>
                 </div>
             </article>
             
@@ -92,19 +92,36 @@
 
         <!--* Contacto -->
         <section class="containerCont">
-            <h2>Contáctanos</h2>
 
-            <!--* Formulario 1 -->
-            <span>En construcción</span>
+            <form action="" method="">
+                <legend>Contáctanos</legend>
+
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido">
+                <input type="email" name="correo" id="correo" placeholder="Ingresá tu correo electrónico">
+                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+
+                <div>
+                    <button type="reset">Resetear</button>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+            
         </section>
 
         <!--* Suscripción -->
         <section class="containerSusc">
-            <img src="img/iconEnviar.png" alt="Icono de enviar mensaje">
-            <p>Suscríbete para más novedades</p>
+            <div>
+                <img src="img/iconEnviar.png" alt="Icono de enviar mensaje">
+                <span>Suscríbete para más novedades</span>
+            </div>
+            
 
             <!--* Formulario 2 -->
-            <span>En construcción</span>
+            <form action="" method="">
+                <input type="email" name="correo" id="correo" placeholder="Ingresá tu correo electrónico">
+                <button type="submit">Suscribirme</button>
+            </form>
+            
         </section>
 
     </main>
@@ -142,7 +159,7 @@
             <!--* Logo -->
             <div class="containerLogo footer">
                 <img src="img/logoCat.png" alt="Logo Cat">
-                <p><span>Front</span>Cat&Dog</p>
+                <p><span>Front </span>Cat&Dog</p>
                 <img src="img/logoDog.png" alt="Logo Dog">
             </div>
         </section>

@@ -7,31 +7,33 @@
 /*? Header */
 
 /** Barra superior */
-.containerSup, .containerFin {
-    background-color: #222222;
-    font-size: 10px;
-    color: #f4f4f4;
-    display: flex;
-}
 
 .containerSup {
-    justify-content: space-between;
-    padding: 5px 50px 5px 50px;
-}
-
-.containerSup span {
-    margin: 2px;
+    display: none;
 }
 
 /** Barra de navegación */
 .containerNav {
     background-color: #F0A83E;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*! Nav desaparece para maquetar por mientras pero falta menu hamburguesa*/
+.menu ul {
+    display: none;
 }
 
 .containerLogo {
     color: #f4f4f4;
     font-weight: bold;
+    display: flex;
+}
+
+.containerLogo img {
+    width: 17px;
+    height: 17px;
 }
 
 .containerLogo p span {
@@ -42,9 +44,6 @@ a {
     text-decoration: none;
 }
 
-.containerNav a {
-    color: #f4f4f4;
-}
 
 /*? Main */
 
@@ -91,18 +90,89 @@ a {
 }
 
 /** Productos destacados */
-.containerProd article h2 {
-    color: #3C2313;
-    font-size: 40px;
+
+.containerProd {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
 }
 
-.containerProd a {
+.destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.destacados h2 {
+    color: #3C2313;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.destacados img {
+    width: 90px;
+    height: 83px;
+}
+
+.destacadosMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+    padding: 0px;
+
+}
+
+.destacados li {
+    list-style-type: none;
+    font-size: 16px;
     color: #666666;
+}
+
+.destacadosMenu li a {
+    color: #666666;
+}
+
+/** Productos tarjetas */
+.prodCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prodCard div {
+    position: relative;
+    margin: 10px;
+}
+
+.prodNom, .prodPrecio {
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.prodNom {
+    bottom: 30px;
+    left: 50px;
+    color: #3C2313;
+}
+
+.prodPrecio {
+    bottom: 10px;
+    left: 110px;
+    color: #F0A83E;
 }
 
 /** Contacto */
 
 /** Suscripción */
+
+.containerSusc {
+    background-color: #F0A83E;
+}
 
 /*? Footer */
 
@@ -115,6 +185,60 @@ a {
 /** Barra final */
 
 .containerFin {
+    background-color: #222222;
+    font-size: 10px;
+    color: #f4f4f4;
+    display: flex;
     justify-content: center;
     padding: 5px;
 }
+
+
+@media(min-width:768px){
+    
+    /*? Header */
+
+    /** Barra superior */
+    .containerSup {
+        background-color: #222222;
+        font-size: 10px;
+        color: #f4f4f4;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 50px 5px 50px;
+    }
+    
+    .containerSup span {
+        margin: 2px;
+    }
+    
+    /** Barra de navegación */
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 450px;
+    }
+
+    .menu ul li {
+        list-style-type: none;
+    }
+
+    .menu ul li a {
+        color: #f4f4f4;
+    }
+
+
+    /*? Main */
+
+    /** Cabezera */
+
+    /** Productos tarjetas */
+
+    .prodCard {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
